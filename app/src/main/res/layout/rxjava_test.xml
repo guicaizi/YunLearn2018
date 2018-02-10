@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送数据1"/>
+    <Button
+        android:id="@+id/btn_one1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送数据2"/>
+    <Button
+        android:id="@+id/btn_one2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送数据3"/>
+    <Button
+        android:id="@+id/btn_one3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送数据4"/>
+
+    <Button
+        android:id="@+id/btn_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="绑定数据"/>
+
+    <TextView
+        android:id="@+id/tv_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="显示数据"/>
+</LinearLayout>
