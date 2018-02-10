@@ -29,7 +29,7 @@ public class MainActivity extends BaseActivity {
     @Bind(R.id.toolbar)
     Toolbar mToolbar;
     @Bind(R.id.listView)
-    ListView mListView;
+     ListView mListView;
     public static final String[] datas = new String[]{
             "下载",
             "权限使用","大数运算","查找蓝牙","查找蓝牙2","ScheduledExeCuttorServiceDemo",
