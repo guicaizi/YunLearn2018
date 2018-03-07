@@ -20,6 +20,7 @@ import com.yun.software.yunlearn.TestDemo.PDFRead;
 import com.yun.software.yunlearn.TestDemo.RxJavaDemo.RxJavaTextDemo;
 import com.yun.software.yunlearn.TestDemo.ScheduledExecutorServiceTest;
 import com.yun.software.yunlearn.TestDemo.SystemUIChangeTest;
+import com.yun.software.yunlearn.ThreadPool.TreadTestActivity;
 
 import butterknife.Bind;
 
@@ -33,7 +34,7 @@ public class MainActivity extends BaseActivity {
     public static final String[] datas = new String[]{
             "下载",
             "权限使用","大数运算","查找蓝牙","查找蓝牙2","ScheduledExeCuttorServiceDemo",
-            "SystemUIChangeTest","二维码扫描","反射测试","RxJava测试","pdf阅读器"};
+            "SystemUIChangeTest","二维码扫描","反射测试","RxJava测试","pdf阅读器","线程池测试"};
 
     @Override
     public int getLayoutId() {
@@ -95,6 +96,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case 10:
                 enterPage(PDFRead.class);
+                break;
+            case 11:
+                enterPage(TreadTestActivity.class);
                 break;
         }
     }

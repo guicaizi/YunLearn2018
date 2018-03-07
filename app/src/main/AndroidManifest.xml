@@ -53,6 +53,7 @@
         <activity android:name=".TestDemo.JavaReflect.TestGetSuperClass"/>
         <activity android:name=".TestDemo.RxJavaDemo.RxJavaTextDemo"/>
         <activity android:name=".TestDemo.PDFRead"/>
+        <activity android:name=".ThreadPool.TreadTestActivity"/>
     </application>
 
 </manifest>
