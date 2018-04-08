@@ -14,21 +14,5 @@
     {
         "merged": "D:\\Android\\YunLearn\\android-pdf-viewer\\build\\intermediates\\res\\merged\\release\\drawable\\default_scroll_handle_right.xml",
         "source": "D:\\Android\\YunLearn\\android-pdf-viewer\\src\\main\\res\\drawable\\default_scroll_handle_right.xml"
-    },
-    {
-        "merged": "D:\\appdemo\\appdemo9\\AndroidPdfViewer-master\\android-pdf-viewer\\build\\intermediates\\res\\merged\\release\\drawable\\default_scroll_handle_right.xml",
-        "source": "D:\\appdemo\\appdemo9\\AndroidPdfViewer-master\\android-pdf-viewer\\src\\main\\res\\drawable\\default_scroll_handle_right.xml"
-    },
-    {
-        "merged": "D:\\appdemo\\appdemo9\\AndroidPdfViewer-master\\android-pdf-viewer\\build\\intermediates\\res\\merged\\release\\drawable\\default_scroll_handle_top.xml",
-        "source": "D:\\appdemo\\appdemo9\\AndroidPdfViewer-master\\android-pdf-viewer\\src\\main\\res\\drawable\\default_scroll_handle_top.xml"
-    },
-    {
-        "merged": "D:\\appdemo\\appdemo9\\AndroidPdfViewer-master\\android-pdf-viewer\\build\\intermediates\\res\\merged\\release\\drawable\\default_scroll_handle_bottom.xml",
-        "source": "D:\\appdemo\\appdemo9\\AndroidPdfViewer-master\\android-pdf-viewer\\src\\main\\res\\drawable\\default_scroll_handle_bottom.xml"
-    },
-    {
-        "merged": "D:\\appdemo\\appdemo9\\AndroidPdfViewer-master\\android-pdf-viewer\\build\\intermediates\\res\\merged\\release\\drawable\\default_scroll_handle_left.xml",
-        "source": "D:\\appdemo\\appdemo9\\AndroidPdfViewer-master\\android-pdf-viewer\\src\\main\\res\\drawable\\default_scroll_handle_left.xml"
     }
 ]

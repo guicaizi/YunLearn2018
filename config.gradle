@@ -1,0 +1,12 @@
+ ext {
+     android = [
+             compileSdkVersion: 26,
+             minSdkVersion    : 14,
+             targetSdkVersion : 26,
+             versionCode      : 1,
+             versionName      : "1.0"
+     ]
+
+     teststr="hehhehehehhehe"
+
+ }

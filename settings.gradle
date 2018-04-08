@@ -1,1 +1,1 @@
-include ':app', ':corelib', ':android-pdf-viewer'
+include ':app', ':corelib', ':android-pdf-viewer', ':otherApp'

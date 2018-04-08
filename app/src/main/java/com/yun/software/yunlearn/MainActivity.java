@@ -11,6 +11,9 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.yun.software.corelib.base.BaseActivity;
+import com.yun.software.yunlearn.Contents.PermissionConstants;
+import com.yun.software.yunlearn.DaggerDemo.Dagger2TestDemo;
+import com.yun.software.yunlearn.ServiceTest.TestService;
 import com.yun.software.yunlearn.TestDemo.ActivityScanerCode;
 import com.yun.software.yunlearn.TestDemo.BigNumberDemo;
 import com.yun.software.yunlearn.TestDemo.BlueDemo;
@@ -32,10 +35,19 @@ public class MainActivity extends BaseActivity {
     @Bind(R.id.listView)
      ListView mListView;
     public static final String[] datas = new String[]{
-            "下载",
-            "权限使用","大数运算","查找蓝牙","查找蓝牙2","ScheduledExeCuttorServiceDemo",
-            "SystemUIChangeTest","二维码扫描","反射测试","RxJava测试","pdf阅读器","线程池测试"};
+            "1下载",
+            "2权限使用","3大数运算","4查找蓝牙","5查找蓝牙2","6ScheduledExeCuttorServiceDemo",
+            "7SystemUIChangeTest","8二维码扫描","9反射测试","10RxJava测试","11pdf阅读器","12线程池测试","13dragger2测试","14测试服务","15Hook AMS登录处理"};
+    private static final Class<?>[] ACTIVITYS={
+            DownLoadActivity.class, ManagerPermission.class, BigNumberDemo.class, BlueDemo.class,
 
+            BlueDemo2.class,ScheduledExecutorServiceTest.class,SystemUIChangeTest.class,ActivityScanerCode.class,TestGetSuperClass.class,
+
+            RxJavaTextDemo.class,PDFRead.class,TreadTestActivity.class,Dagger2TestDemo.class
+    };
+
+
+    private String[] permission = PermissionConstants.getPermissions(PermissionConstants.STORAGE);
     @Override
     public int getLayoutId() {
         return R.layout.activity_main;
@@ -47,10 +59,11 @@ public class MainActivity extends BaseActivity {
         mToolbar = (Toolbar) this.findViewById(R.id.toolbar);
         mToolbar.setTitleTextColor(Color.WHITE);
         mToolbar.setTitle("");
+
         mTitleTextView = (TextView) this.findViewById(R.id.toolbar_title);
         mTitleTextView.setText("学习指南");
-
         mListView.setAdapter(new MainAdapter());
+
     }
 
     @Override
@@ -63,6 +76,7 @@ public class MainActivity extends BaseActivity {
         });
     }
     private void doClick(int position) {
+        // 方便查看
         switch (position) {
             case 0:
                 enterPage(DownLoadActivity.class);
@@ -99,6 +113,15 @@ public class MainActivity extends BaseActivity {
                 break;
             case 11:
                 enterPage(TreadTestActivity.class);
+                break;
+            case 12:
+                enterPage(Dagger2TestDemo.class);
+                break;
+            case 13:
+                enterPage(TestService.class);
+                break;
+            case 14:
+                enterPage(TestService.class);
                 break;
         }
     }
@@ -143,7 +166,6 @@ public class MainActivity extends BaseActivity {
     class ViewHolder {
         TextView mTextView;
     }
-
 
     @Override
     public Activity getActivity() {
