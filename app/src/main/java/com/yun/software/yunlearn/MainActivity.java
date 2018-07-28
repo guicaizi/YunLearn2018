@@ -13,17 +13,28 @@ import android.widget.TextView;
 import com.yun.software.corelib.base.BaseActivity;
 import com.yun.software.yunlearn.Contents.PermissionConstants;
 import com.yun.software.yunlearn.DaggerDemo.Dagger2TestDemo;
+import com.yun.software.yunlearn.ServiceTest.TestBingService;
 import com.yun.software.yunlearn.ServiceTest.TestService;
+import com.yun.software.yunlearn.SimpleDemo.CoustomView;
+import com.yun.software.yunlearn.SimpleDemo.FileDemo;
+import com.yun.software.yunlearn.SimpleDemo.TouchDemo;
 import com.yun.software.yunlearn.TestDemo.ActivityScanerCode;
 import com.yun.software.yunlearn.TestDemo.BigNumberDemo;
 import com.yun.software.yunlearn.TestDemo.BlueDemo;
 import com.yun.software.yunlearn.TestDemo.BlueDemo2;
 import com.yun.software.yunlearn.TestDemo.JavaReflect.TestGetSuperClass;
+import com.yun.software.yunlearn.TestDemo.MiuiWheater;
 import com.yun.software.yunlearn.TestDemo.PDFRead;
 import com.yun.software.yunlearn.TestDemo.RxJavaDemo.RxJavaTextDemo;
 import com.yun.software.yunlearn.TestDemo.ScheduledExecutorServiceTest;
 import com.yun.software.yunlearn.TestDemo.SystemUIChangeTest;
+import com.yun.software.yunlearn.TestDemo.TestkeyBord;
+import com.yun.software.yunlearn.TestDemo.UpdateProgress;
 import com.yun.software.yunlearn.ThreadPool.TreadTestActivity;
+import com.yun.software.yunlearn.anition.Animtion;
+import com.yun.software.yunlearn.jni.NDKActivity;
+
+import java.text.BreakIterator;
 
 import butterknife.Bind;
 
@@ -37,13 +48,15 @@ public class MainActivity extends BaseActivity {
     public static final String[] datas = new String[]{
             "1下载",
             "2权限使用","3大数运算","4查找蓝牙","5查找蓝牙2","6ScheduledExeCuttorServiceDemo",
-            "7SystemUIChangeTest","8二维码扫描","9反射测试","10RxJava测试","11pdf阅读器","12线程池测试","13dragger2测试","14测试服务","15Hook AMS登录处理"};
+            "7SystemUIChangeTest","8二维码扫描","9反射测试","10RxJava测试","11pdf阅读器","12线程池测试",
+            "13dragger2测试","14测试服务","15Hook AMS登录处理","16调用NDK","17触摸监听","18文件路径",
+            "19绘制字体","20更新listview进度条","21测试软键盘弹出","22折线图","23循环背景动画" };
     private static final Class<?>[] ACTIVITYS={
             DownLoadActivity.class, ManagerPermission.class, BigNumberDemo.class, BlueDemo.class,
 
             BlueDemo2.class,ScheduledExecutorServiceTest.class,SystemUIChangeTest.class,ActivityScanerCode.class,TestGetSuperClass.class,
 
-            RxJavaTextDemo.class,PDFRead.class,TreadTestActivity.class,Dagger2TestDemo.class
+            RxJavaTextDemo.class,PDFRead.class,TreadTestActivity.class,Dagger2TestDemo.class,TouchDemo.class,FileDemo.class
     };
 
 
@@ -118,16 +131,43 @@ public class MainActivity extends BaseActivity {
                 enterPage(Dagger2TestDemo.class);
                 break;
             case 13:
-                enterPage(TestService.class);
+                enterPage(TestBingService.class);
                 break;
             case 14:
                 enterPage(TestService.class);
                 break;
+            case 15:
+                enterPage(NDKActivity.class);
+                break;
+            case 16:
+                enterPage(TouchDemo.class);
+                break;
+            case 17:
+                enterPage(FileDemo.class);
+                break;
+            case 18:
+                enterPage(CoustomView.class);
+                break;
+            case 19:
+                enterPage(UpdateProgress.class);
+               break;
+            case 20:
+                enterPage(TestkeyBord.class);
+                break;
+            case 21:
+                enterPage(MiuiWheater.class);
+            break;
+            case 22:
+                enterPage(Animtion.class);
+                break;
+
+
+
+
         }
     }
 
     public class MainAdapter extends BaseAdapter {
-
         @Override
         public int getCount() {
             return datas.length;

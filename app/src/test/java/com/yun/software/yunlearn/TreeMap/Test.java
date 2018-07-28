@@ -20,6 +20,7 @@ public class Test {
         Student s3 = new Student("aaa", 23);
         Student s4 = new Student("aa", 27);
         Student s5 = new Student("aaa", 22);
+        Student s9 = new Student("aaa", 22);
         Student s6 = new Student("aaaa", 40);
         Student s7 = new Student("aaaaaaaa", 22);
         Student s8 = new Student("aaa", 29);
@@ -33,6 +34,7 @@ public class Test {
         ts.add(s6);
         ts.add(s7);
         ts.add(s8);
+        ts.add(s9);
 
         // 遍历
         for (Student s : ts) {

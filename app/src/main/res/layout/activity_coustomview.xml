@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <com.yun.software.yunlearn.Widget.CoustomTestView
+        android:id="@+id/cv"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        app:text="中华人名共和国"
+        app:text_color="#ff0000"
+        app:text_size="14dp"
+        app:background_color="#00ff00"
+        app:ripple_color="#333333"
+        app:ripple_alpha="255"
+        android:src="@drawable/crop"
+        app:ripple_duration="2000"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

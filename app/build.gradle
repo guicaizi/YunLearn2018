@@ -16,6 +16,11 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk{
+
+            moduleName"MyJni"
+            abiFilters "armeabi", "armeabi-v7a"
+        }
     }
     buildTypes {
         release {
@@ -56,10 +61,10 @@ dependencies {
     apt 'com.google.dagger:dagger-compiler:2.4'
     //java注解
     compile 'org.glassfish:javax.annotation:10.0-b28'
-
     compile 'org.greenrobot:greendao:3.2.0'
     compile 'com.github.yuweiguocn:GreenDaoUpgradeHelper:v2.0.1'
     compile 'org.greenrobot:eventbus:3.1.1'
     //权限申请
     compile 'com.yanzhenjie:permission:1.1.2'
+    compile project(':miuizx')
 }

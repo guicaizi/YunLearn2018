@@ -1,5 +1,6 @@
 package com.yun.software.yunlearn.TestDemo;
 
+import org.greenrobot.eventbus.Logger;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -53,6 +54,16 @@ public class Test01 {
     public void test03(){
         Collection c=new ArrayList<String>();
         Iterator iterator=c.iterator();
+
+    }
+    @Test
+    public void test04(){
+        float f= (float) 1235.689874456;
+        double s= (double) 1235.689874456;
+        System.out.println(f);
+        System.out.println(s);
+
+
 
     }
 

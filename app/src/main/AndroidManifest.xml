@@ -45,7 +45,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".DownLoadActivity"/>
-        <activity android:name=".ManagerPermission"/>
+        <activity android:name=".ManagerPermission"/>4
         <activity android:name=".TestDemo.BigNumberDemo"/>
         <activity android:name=".TestDemo.BlueDemo"/>
         <activity android:name=".TestDemo.BlueDemo2"/>
@@ -55,17 +55,32 @@
         <activity android:name=".TestDemo.ActivityScanerCode"/>
         <activity android:name=".TestDemo.JavaReflect.TestGetSuperClass"/>
         <activity android:name=".TestDemo.RxJavaDemo.RxJavaTextDemo"/>
+        <activity android:name=".SimpleDemo.CoustomView"/>
         <activity android:name=".TestDemo.PDFRead"/>
         <activity android:name=".ThreadPool.TreadTestActivity"/>
         <activity android:name=".DaggerDemo.Dagger2TestDemo"/>
         <activity android:name=".ServiceTest.TestService"/>
-
+        <activity android:name=".SimpleDemo.TouchDemo"/>
+        <activity android:name=".ServiceTest.TestBingService"/>
+        <activity android:name=".ServiceTest.SecondTest"/>
+        <activity android:name=".jni.NDKActivity"/>
+        <activity android:name=".SimpleDemo.FileDemo"/>
         <service android:name=".ServiceTest.MyService"/>
-        <service
-            android:name=".Binder.MyService"
-            android:enabled="true"
-            android:exported="true">
+        <service android:name=".ServiceTest.UpLoadVidoeService"/>
+        <activity android:name=".TestDemo.UpdateProgress"/>
+        <activity android:name=".TestDemo.MiuiWheater"/>
+        <activity android:name=".TestDemo.TestkeyBord"/>
+        <activity android:name=".anition.Animtion"/>
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+
+        <service android:name=".Binder.MyService">
+            <intent-filter>
+                <action android:name="com.yun.software.yunlearn.Binder.MyService" />
+            </intent-filter>
         </service>
+
     </application>
 
 </manifest>

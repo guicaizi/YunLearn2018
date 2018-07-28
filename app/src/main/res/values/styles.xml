@@ -31,6 +31,39 @@
     <style name="titlestyle">
         <item name="android:textSize">12sp</item>
     </style>
+    <declare-styleable name="CoustomTestView">
+        <attr name="border_width" format="dimension" />
+        <attr name="corner_radius" format="dimension" />
+        <attr name="horizontal_padding" format="dimension" />
+        <attr name="vertical_padding" format="dimension" />
+        <attr name="text_size" format="dimension" />
+        <attr name="bd_distance" format="dimension" />
+        <attr name="text_color" format="color" />
+        <attr name="text" format="string"/>
+        <attr name="border_color" format="color" />
+        <attr name="background_color" format="color" />
+        <attr name="max_length" format="integer" />
+        <attr name="clickable" format="boolean" />
+        <attr name="tag_theme" format="enum">
+            <enum name="none" value="-1" />
+            <enum name="random" value="0" />
+            <enum name="pure_cyan" value="1" />
+            <enum name="pure_teal" value="2" />
+        </attr>
+        <attr name="text_direction" format="enum" >
+            <enum name="ltr" value="3" />
+            <enum name="rtl" value="4" />
+        </attr>
 
+        <attr name="ripple_color" format="color" />
+        <attr name="ripple_alpha" format="integer" />
+        <attr name="ripple_duration" format="integer" />
+
+        <attr name="enable_cross" format="boolean" />
+        <attr name="cross_width" format="dimension" />
+        <attr name="cross_color" format="color" />
+        <attr name="cross_line_width" format="dimension" />
+        <attr name="cross_area_padding" format="dimension" />
+    </declare-styleable>
 
 </resources>

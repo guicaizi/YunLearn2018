@@ -70,10 +70,10 @@ public class TestService extends BaseActivity {
         btnUnbindService.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (mBound) {
+//                if (mBound) {
                     unbindService(mConnection);
-                    mBound = false;
-                }
+//                    mBound = false;
+//                }
             }
         });
 
@@ -84,32 +84,32 @@ public class TestService extends BaseActivity {
         public void onServiceConnected(ComponentName name, IBinder service) {
 //            MyService.MyBinder binder = (MyService.MyBinder) service;
 //            mService = binder.getService();
-            Toast.makeText(mContext, "绑定成功", Toast.LENGTH_SHORT).show();
-            mBound = true;
+//            Toast.makeText(mContext, "绑定成功", Toast.LENGTH_SHORT).show();
+//            mBound = true;
         }
 
         @Override
         public void onServiceDisconnected(ComponentName name) {
-            Toast.makeText(mContext, "绑定是啊比", Toast.LENGTH_SHORT).show();
-            mBound = false;
+//            Toast.makeText(mContext, "绑定是啊比", Toast.LENGTH_SHORT).show();
+//            mBound = false;
         }
     };
 
     public void getData(View view) {
-        if (mBound) {
-            Toast.makeText(this, "获取到的随机数：" + mService.getRandomNumber(), Toast.LENGTH_SHORT).show();
-        } else {
-            Toast.makeText(this, "服务未绑定", Toast.LENGTH_SHORT).show();
-        }
+//        if (mBound) {
+//            Toast.makeText(this, "获取到的随机数：" + mService.getRandomNumber(), Toast.LENGTH_SHORT).show();
+//        } else {
+//            Toast.makeText(this, "服务未绑定", Toast.LENGTH_SHORT).show();
+//        }
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if (mBound) {
-            unbindService(mConnection);
-            mBound = false;
-        }
+//        if (mBound) {
+//            unbindService(mConnection);
+//            mBound = false;
+//        }
     }
 
 

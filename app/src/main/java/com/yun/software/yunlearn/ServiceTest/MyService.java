@@ -62,7 +62,7 @@ public class MyService extends Service {
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         Log.i(TAG, "onStartCommand() executed");
-        MyLogUtils.i(TAG,"startid"+startId);
+        MyLogUtils.i(TAG,"startid---》"+startId);
 //        每次回调onStartCommand()方法时，参数“startId”的值都是递增的，startId用于唯一标识每次对Service发起的处理请求
 //        如果服务同时处理多个 onStartCommand() 请求，则不应在处理完一个启动请求之后立即销毁服务，
         // 因为此时可能已经收到了新的启动请求，在第一个请求结束时停止服务会导致第二个请求被终止。为了避免这一问题，

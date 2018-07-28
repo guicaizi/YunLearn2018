@@ -28,8 +28,8 @@ public class AppApplication extends BaseApplication {
     @Override
     protected void onConfig() {
         // 关闭内存泄漏查看
-        HookUtil hookUtil=new HookUtil();
-        hookUtil.hookStartActivity(getAppContext());
+//        HookUtil hookUtil=new HookUtil();
+//        hookUtil.hookStartActivity(getAppContext());
         setIsWatcherRef(false);
         initGreenDao3(this);
         initLeakCanry();
